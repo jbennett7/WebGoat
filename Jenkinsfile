@@ -5,6 +5,8 @@ pipeline {
       steps {
         sh '''
                     echo "PATH = ${PATH}"
+                    echo "${JAVA_HOME}
+                    java -version
                     echo "M2_HOME = ${M2_HOME}"
                     mvn -B install '''
       }
