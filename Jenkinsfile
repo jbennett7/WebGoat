@@ -21,6 +21,9 @@ pipeline {
             echo '...run SonarQube or other SAST tools here'
           }
         }
+      }
+    }
+  }
   tools {
     maven 'M3'
   }
