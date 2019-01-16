@@ -8,7 +8,7 @@ pipeline {
                     echo "${JAVA_HOME}"
                     java -version
                     echo "M2_HOME = ${M2_HOME}"
-                    mvn -B install '''
+                    mvn -B install -DskipTests=true '''
       }
     }
     stage('Scan App - Build Container') {
